@@ -55,9 +55,9 @@ function promptUser() {
 
 
 function generateReadMe(answers) {
-return `# ${answers.project}
+    return `# ${answers.project}
     ## Description
-    ${answers.description}
+        ${answers.description}
     ## Table of Contents
     
     * [Installation](#installation)
@@ -66,19 +66,19 @@ return `# ${answers.project}
 
     ## Installation
 
-    ${answers.installation}
+        ${answers.installation}
 
     ## Usage
 
-    ${answers.usage}
+        ${answers.usage}
 
     ## License
 
-    ${answers.license}
+        ${answers.license}
 
     ## Contributing
 
-    ${answers.contributing}`;
+        ${answers.contributing}`;
 }
 
 promptUser()
