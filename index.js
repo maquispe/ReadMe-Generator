@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const promptUser = () => {
+function promptUser() {
    return inquirer.prompt([
         {
             message: "Welcome to the README.md generator!",
@@ -54,42 +54,43 @@ const promptUser = () => {
 }
 
 
-const generateReadMe = answers => {
-    `# ${answers.project}
-    ##Description
+function generateReadMe(answers) {
+return `# ${answers.project}
+    ## Description
     ${answers.description}
     ## Table of Contents
     
-    *[Installation](#installation)
-    *[Usage](#usage)
-    *[License](#license)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
 
-    ##Installation
+    ## Installation
 
     ${answers.installation}
 
-    ##Usage
+    ## Usage
 
     ${answers.usage}
 
-    ##License
+    ## License
 
     ${answers.license}
 
-    ##Contributing
+    ## Contributing
 
     ${answers.contributing}`;
 }
 
 promptUser()
-    .then(answers => {
+    .then(function(answers) {
         const readme = generateReadMe(answers);
 
         return writeFileAsync("README.md", readme);
     })
-    .then(() => {
+    .then(function() {
         console.log("README generated succesfully!")
     })
-    .catch(err =>
-        console.log(err)
+    .catch(function(err){
+       console.log(err)
+    }
     );
