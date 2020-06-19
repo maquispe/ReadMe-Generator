@@ -16,6 +16,9 @@ First, download all of the required files. Next, using Node.js, run 'npm install
 
 Once you have all of the necessary components, run 'node index' to start answering a series of questions relevant to you README file.
 
+![](Images/Screenshot-1.png)
+![](Images/Screenshot-2.png)
+
 ## License
 
 This project currently has no license.
