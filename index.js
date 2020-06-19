@@ -42,12 +42,22 @@ function promptUser() {
         },
         {
             message: "Enter your Github username:",
-            name: "user-info",
+            name: "username",
             type: "input",
         },
         {
             message: "Enter the link to your project:",
             name: "link",
+            type: "input",
+        },
+        {
+            message: "How would users leave a question?",
+            name: "questions",
+            type: "input",
+        },
+        {
+            message: "Does your project need a badge? If so, enter the name of one.",
+            name: "badges",
             type: "input",
         },
     ]);
@@ -56,6 +66,7 @@ function promptUser() {
 
 function generateReadMe(answers) {
     return `# ${answers.project}
+    [![GitHub version](https://badge.fury.io/gh/boennemann%2Fbadges.svg)](http://badge.fury.io/gh/boennemann%2Fbadges)
     ## Description
         ${answers.description}
     ## Table of Contents
@@ -78,7 +89,15 @@ function generateReadMe(answers) {
 
     ## Contributing
 
-        ${answers.contributing}`;
+        ${answers.contributing}
+        Github username: ${answers.user-info}
+    
+    ## Tests
+
+    ## Questions
+
+        ${answers.questions}`
+    
 }
 
 promptUser()
@@ -88,7 +107,7 @@ promptUser()
         return writeFileAsync("README.md", readme);
     })
     .then(function() {
-        console.log("README generated succesfully!")
+        console.log("README generated successfully!")
     })
     .catch(function(err){
        console.log(err)

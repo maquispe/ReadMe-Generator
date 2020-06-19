@@ -1,24 +1,31 @@
-# ReadMe.md Generator
-    ## Description
-        This CLI app allows the user to dynamically create a README.md file with the recommended sections that make up a good readme.
-    ## Table of Contents
+# README-Generator
+[![GitHub version](https://badge.fury.io/gh/boennemann%2Fbadges.svg)](http://badge.fury.io/gh/boennemann%2Fbadges)
+ ## Description
+    This CLI app allows the user to dynamically create a README.md file by answering a series of questions in the terminal.
+## Table of Contents
     
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
 
-    ## Installation
+## Installation
 
-        After downloading, run npm install in your terminal to download the required dependencies. Next, run node index to start answering the questions in the terminal which will then create your .md file.
+    First, download all the required files. Next, using Node.js, run npm install to get the dependencies needed to run the program. Finally, run 'node index' to start answering a series of questions relevant to you README file.
 
-    ## Usage
+## Usage
 
-        
+    Once you have all the necessary components, run 'node index' to start answering a series of questions relevant to you README file.
 
-    ## License
+## License
 
-        MIT License
+     This project currently has no license.
 
-    ## Contributing
+## Contributing
 
-        Create an issue in the Github repository or send me a message!
+    Users can email me or open an issue in the Github repository.
+    
+## Tests
+
+## Questions
+
+    Email me or open an issue in the Github repository.
