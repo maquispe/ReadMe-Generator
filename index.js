@@ -56,11 +56,6 @@ function promptUser() {
       name: "questions",
       type: "input",
     },
-    {
-      message: "Does your project need a badge? If so, enter the name of one.",
-      name: "badges",
-      type: "input",
-    },
   ]);
 }
 
@@ -90,8 +85,8 @@ ${answers.license}
 ## Contributing
 
 ${answers.contributing}
-Github username: ${answers.username}
-Github repository link: ${answers.link}
+* Github username: ${answers.username}
+* Github repository link: ${answers.link}
     
 ## Tests
 
