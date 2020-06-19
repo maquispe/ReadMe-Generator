@@ -1,7 +1,10 @@
 # README Generator
 [![GitHub version](https://badge.fury.io/gh/boennemann%2Fbadges.svg)](http://badge.fury.io/gh/boennemann%2Fbadges)
 ## Description
-This CLI app allows the user to dynamically create a README.md file by answering a series of questions in the terminal.
+
+This CLI app allows the user to dynamically create a README.md file by answering a series of 
+questions in the terminal.
+
 ## Table of Contents
     
 * [Installation](#installation)
@@ -23,8 +26,8 @@ This project currently has no license.
 ## Contributing
 
 Users can email me or open an issue in the Github repository
-Github username: maquispe
-Github repository link: https://github.com/maquispe/README-Generator
+* Github username: maquispe
+* Github repository link: https://github.com/maquispe/README-Generator
     
 ## Tests
 
