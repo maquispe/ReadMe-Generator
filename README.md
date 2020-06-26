@@ -26,8 +26,8 @@ This project currently has no license.
 ## Contributing
 
 Users can email me or open an issue in the Github repository.
-Github username: maquispe
-Github repository link: https://github.com/maquispe/README-Generator
+* Github username: maquispe
+* Github repository link: https://github.com/maquispe/README-Generator
     
 ## Tests
 
