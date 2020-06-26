@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
-function promptUser() {
+const promptUser = () => {
   return inquirer.prompt([
     {
       message: "Welcome to the README.md generator!",
@@ -59,7 +59,7 @@ function promptUser() {
   ]);
 }
 
-function generateReadMe(answers) {
+const generateReadMe = answers => {
   return `# ${answers.project}
 [![GitHub version](https://badge.fury.io/gh/boennemann%2Fbadges.svg)](http://badge.fury.io/gh/boennemann%2Fbadges)
 ## Description
@@ -96,14 +96,14 @@ ${answers.questions}`;
 }
 
 promptUser()
-  .then(function (answers) {
+  .then(answers => {
     const readme = generateReadMe(answers);
 
     return writeFileAsync("README.md", readme);
   })
-  .then(function () {
+  .then(() => {
     console.log("README generated successfully!");
   })
-  .catch(function (err) {
+  .catch(err => {
     console.log(err);
   });
