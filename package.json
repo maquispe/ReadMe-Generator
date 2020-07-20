@@ -4,7 +4,8 @@
   "description": "Generate README.md files using CLI",
   "main": "index.js",
   "dependencies": {
-    "inquirer": "^7.2.0"
+    "inquirer": "^7.2.0",
+    "lodash": "^4.17.19"
   },
   "devDependencies": {},
   "scripts": {

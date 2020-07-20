@@ -26,11 +26,12 @@ This project currently has no license.
 ## Contributing
 
 Users can email me or open an issue in the Github repository.
-Github username: maquispe
-Github repository link: https://github.com/maquispe/README-Generator
+* Email: elsadan96340@gmail.com
+* Github username: maquispe
+* Github repository link: https://github.com/maquispe/README-Generator
     
 ## Tests
 
 ## Questions
 
-Users can email me or open an issue in the GIthub repository.
+Users can email me or open an issue in the Github repository.
